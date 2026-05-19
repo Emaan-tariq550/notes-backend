@@ -11,7 +11,7 @@ const app = express();
 app.use(cors({
   origin: [
     'http://localhost:5173',
-    'https://backend-nvc3.vercel.app'
+    'https://notes-backend-rosy-five.vercel.app/api'
   ],
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
