@@ -8,10 +8,14 @@ const notesRoutes = require('./routes/notes');
 
 const app = express();
 
-// Middleware
 app.use(cors({
-  origin: ['http://localhost:5173', 'https://backend-neon-eta.vercel.app'],
-  credentials: true
+  origin: [
+    'http://localhost:5173',
+    'https://frontend-eight-sel.vercel.app'  // ← aapka actual Vercel URL
+  ],
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
 }));
 app.use(express.json());
 
