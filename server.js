@@ -9,11 +9,8 @@ const notesRoutes = require('./routes/notes');
 const app = express();
 
 app.use(cors({
-  origin: [
-    'http://localhost:5173',
-    'https://notes-backend-rosy-five.vercel.app/api'
-  ],
-  credentials: true,
+  origin: '*',   // ← abhi ke liye sab allow karo
+  credentials: false,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
