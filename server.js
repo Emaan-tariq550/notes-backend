@@ -11,7 +11,7 @@ const app = express();
 app.use(cors({
   origin: [
     'http://localhost:5173',
-    'https://frontend-eight-sel.vercel.app'  // ← aapka actual Vercel URL
+    'https://backend-nvc3.vercel.app'
   ],
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
